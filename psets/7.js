@@ -13,4 +13,21 @@ fixStart('babble'): 'ba**le'
 
 function fixStart(s) {
   // write your solution here...
+  var first = s.charAt(0);
+  var str = s;
+
+  for(var i = 0; i <= s.length; i++)
+  {
+    if(str.charAt(i) == first)
+    {
+      console.log(i);
+      var str = str.replace(str.charAt(i), "*");
+
+    }
+
+  }
+  var str = str.replace(str.charAt(0), first);
+  console.log(str);
 }
+
+fixStart("lalalallala");

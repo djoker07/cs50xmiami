@@ -12,3 +12,11 @@ Write a function named calculateSupply that:
 */
 
 // write your solution here...
+function supplyCalc(age, daily) {
+  var MAXAGE = 100;
+  var food = ((MAXAGE - age) * 365) * 3;
+
+  console.log("you will need " +food+ " meals to last until the ripe old age of " + MAXAGE );
+}
+
+supplyCalc(25, 2);

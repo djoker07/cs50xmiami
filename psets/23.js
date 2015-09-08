@@ -11,3 +11,17 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+var movie = {
+  title: "The Matrix",
+  duration: 120,
+  stars: ["keanu reeves", "daniel chang"]
+};
+
+function printMovie() {
+  console.log(movie.title + " lasts for about " + movie.duration + ". Stars: ");
+  for(var i in movie.stars) {
+    console.log(movie.stars[i]);
+  }
+}
+
+printMovie();

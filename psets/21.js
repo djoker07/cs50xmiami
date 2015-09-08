@@ -18,3 +18,14 @@ Never forget another recipe!
 */
 
 // write your solution here...
+var recipe = {
+  title : "the chang",
+  servings : 2,
+  ingredients : ["chicken", "mozarella cheese", "bread crumbs", "tomato sauce"]
+};
+console.log(recipe.title);
+console.log("serves: " + recipe.servings);
+console.log("Ingredients: ");
+for(var i in recipe.ingredients) {
+  console.log(recipe.ingredients[i]);
+}

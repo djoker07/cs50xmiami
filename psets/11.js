@@ -12,3 +12,11 @@ Write a function named calculateAge that:
 */
 
 // write your solution here...
+function ageCal(birthYear, currentYear) {
+  var age1 = currentYear - birthYear;
+  var age2 = age1 - 1;
+
+  console.log("you are either " + age1 + " or " + age2);
+}
+
+ageCal(1990, 2015);

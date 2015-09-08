@@ -10,3 +10,14 @@ Call that function for a few different scores and log the result to make sure it
 */
 
 // write your solution here...
+function pluralize(noun, number) {
+  if(number > 1){
+    console.log(number + " " + noun.concat('s'));
+  }
+  else {
+    console.log(number + " " + noun)
+  }
+}
+
+pluralize("cat", 4);
+pluralize('dog', 1);

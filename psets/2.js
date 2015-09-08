@@ -12,3 +12,9 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+var age = 25;
+var MAXAGE = 100;
+var daily = 3;
+var food = ((MAXAGE - age) * 365) * 3;
+
+console.log("you will need " +food+ " meals to last until the ripe old age of " + MAXAGE );

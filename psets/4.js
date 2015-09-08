@@ -11,3 +11,12 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+
+var celsius = 30;
+var fahrenheit = ((celsius * 9) / 5) + 32;
+
+var fahrenheit2 = 100;
+var celsius2 = Math.round(((fahrenheit2 - 32) * 5) / 9);
+
+console.log(celsius + "C is " + fahrenheit + "F");
+console.log(fahrenheit2 + "F is " + celsius2 + "C");

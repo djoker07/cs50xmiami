@@ -18,4 +18,22 @@ For example:
 
 function verbing(word) {
   // write your solution here...
+  //console.log(word.charAt(word.length - 2))
+  if(word.length > 3) {
+    if(word.charAt(word.length -3) == 'i' && word.charAt(word.length -2) == 'n' && word.charAt(word.length -1) == 'g') {
+      var word = word.concat("ly");
+      console.log(word);
+    }
+    else {
+      var word = word.concat("ing");
+      console.log(word);
+    }
+  }
+  else {
+    console.log(word);
+  }
 }
+
+verbing('swimm');
+verbing('swimming');
+verbing('go');

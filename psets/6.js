@@ -14,4 +14,15 @@ Look up the JavaScript string reference to find methods which may be useful!
 
 function mixUp(a, b) {
   // write your solution here...
+  var x = a;
+  var y = b;
+  //indexing the right chars in the strings
+  var x = x.replace(x.charAt(0), b.charAt(0));
+  var x = x.replace(x.charAt(1), b.charAt(1));
+  var y = y.replace(y.charAt(0), a.charAt(0));
+  var y = y.replace(y.charAt(1), a.charAt(1));
+  //concatinate one with the other and adding a space in between
+  console.log(x.concat(" " + y));
 }
+
+mixUp("mix", "pod");

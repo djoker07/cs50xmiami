@@ -10,3 +10,11 @@ http://math2.org/math/geometry/circles.htm
 */
 
 // write your solution here...
+var PI = 3.14;
+var circleRadius = 5;
+var diameter = 2 * circleRadius;
+var circumference = PI * diameter;
+var circleArea = PI * (circleRadius * circleRadius);
+
+console.log("the circumference is "+ circumference);
+console.log("the area is " + circleArea);
