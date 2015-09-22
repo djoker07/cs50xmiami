@@ -35,3 +35,31 @@ like Wheel of Fortune without the wheel and fortune).
 */
 
 // write your solution here...
+var word = "FERROCARRIL";
+var guess = [];
+
+for(var i = 0; i < word.length; i++) {
+  guess.push('_');
+}
+
+function guessLetter(letter) {
+  for(var j = 0; j < word.length; j++) {
+    if(letter.toUpperCase() === word[j]) {
+      guess[j] = word[j];
+      console.log(guess);
+      document.write('<h1> you found a letter </h1>');
+    }
+  }
+
+  for (var i = 0; i < guess.length; i++) {
+    if(guess[i] === '_')
+      return false;
+  }
+  return true;
+}
+
+do {
+  var done = guessLetter(prompt("guess a new letter"));
+} while(!done);
+
+document.getElementsByTagName('body')[0].innerHTML = '<h1> You guessed the word </h1>';
